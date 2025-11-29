@@ -11,7 +11,7 @@ export default function Navbar() {
     {
       href: 'https://drive.google.com/file/d/173DfvGKsehda89LeBkRcVqQ3gd2biKNT/view?usp=sharing',
       label: 'Resume',
-      external: true   // ✅ mark external links
+      external: true
     },
     { href: '/contact', label: 'How To Reach Me' }
   ]
