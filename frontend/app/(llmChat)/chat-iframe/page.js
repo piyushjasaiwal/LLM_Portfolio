@@ -3,20 +3,20 @@ import { useState, useRef, useEffect } from 'react'
 
 const localResponses = {
   "Show me your projects": "Sure! You can view all my projects here: https://your-portfolio.com/projects",
-  "How can I contact you?": "You can reach me at your_email@example.com or via LinkedIn.",
-  "Download my resume": "Here’s my resume: https://your-portfolio.com/resume.pdf"
+  "How can I contact you?": "You can reach me at piyushjasaiwal@gmail.com or find my contact info in the \"How to Reach me\" section.",
+  "Show me your resume": "You can view my resume using the Resume buttom in the top section"
 }
 
 const quickOptions = [
   "Tell me about your experience",
-  "What are your technical skills?",
   "Show me your projects",
+  "Show me your resume", 
   "How can I contact you?"
 ]
 
 export default function ChatIframePage() {
   const [messages, setMessages] = useState([
-    { id: 1, from: 'bot', text: 'Hello! This is a placeholder chat. Your backend LLM will power this.' }
+    { id: 1, from: 'bot', text: 'Hello! Send a message to get started.' }
   ])
   const inputRef = useRef(null)
 

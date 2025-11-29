@@ -13,19 +13,17 @@ export default function Hero() {
         {/* Left content */}
         <div className="flex flex-col gap-14 flex-1">
           <h1 className="text-2xl font-bold">
-            Hi, I’m Piyush — Backend Engineer & AI Agent Enthusiast
+            Hi, I’m Piyush Jasaiwal - Backend Engineer & AI Agent Enthusiast
           </h1>
           <p className="text-gray-600">
-            I build scalable systems, AI agents, and developer tools. This is a
-            portfolio + dashboard hybrid with an embedded chat iframe connected
-            to your LLM backend.
+            I build scalable distributed systems and AI agents, am a quick learner committed to continuous growth, and invite you to use the chat application on the right to explore more about my experience and skills.
           </p>
 
           {/* Buttons */}
           <div className="flex gap-3">
             <a
               className="px-4 py-2 rounded-md bg-[var(--accent)] text-white"
-              href="#projects"
+              href="/projects"
             >
               View projects
             </a>

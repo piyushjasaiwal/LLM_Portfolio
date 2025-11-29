@@ -7,7 +7,6 @@ export default function ChatIframe({ src }) {
       {/* Header */}
       <div className="flex items-center justify-between mb-4">
         <div className="text-sm font-medium">Chat (LLM)</div>
-        <div className="text-xs text-gray-500">Connected</div>
       </div>
 
       {/* Iframe fills remaining height */}
@@ -16,11 +15,6 @@ export default function ChatIframe({ src }) {
         title="LLM Chat"
         className="w-full flex-1 border rounded-md"
       />
-
-      {/* Footer */}
-      <div className="mt-3 text-xs text-gray-500">
-        Tip: replace the iframe src with your backend's embeddable chat route.
-      </div>
     </div>
   );
 }

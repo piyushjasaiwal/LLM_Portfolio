@@ -8,6 +8,11 @@ export default function Navbar() {
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Me' },
     { href: '/projects', label: 'My Personal Projects' },
+    {
+      href: 'https://drive.google.com/file/d/173DfvGKsehda89LeBkRcVqQ3gd2biKNT/view?usp=sharing',
+      label: 'Resume',
+      external: true   // ✅ mark external links
+    },
     { href: '/contact', label: 'How To Reach Me' }
   ]
 
@@ -18,15 +23,31 @@ export default function Navbar() {
           Piyush Jasaiwal
         </Link>
         <div className="flex items-center gap-4">
-          {items.map(i => (
-            <Link
-              key={i.href}
-              href={i.href}
-              className={`text-sm px-3 py-2 rounded-md ${path === i.href ? 'bg-[var(--accent)] text-white' : 'text-gray-700 hover:bg-gray-100'}`}
-            >
-              {i.label}
-            </Link>
-          ))}
+          {items.map(i =>
+            i.external ? (
+              <a
+                key={i.href}
+                href={i.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm px-3 py-2 rounded-md text-gray-700 hover:bg-gray-100"
+              >
+                {i.label}
+              </a>
+            ) : (
+              <Link
+                key={i.href}
+                href={i.href}
+                className={`text-sm px-3 py-2 rounded-md ${
+                  path === i.href
+                    ? 'bg-[var(--accent)] text-white'
+                    : 'text-gray-700 hover:bg-gray-100'
+                }`}
+              >
+                {i.label}
+              </Link>
+            )
+          )}
         </div>
       </div>
     </nav>
