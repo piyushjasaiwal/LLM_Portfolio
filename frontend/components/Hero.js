@@ -16,7 +16,7 @@ export default function Hero() {
             Hi, I’m Piyush Jasaiwal - Backend Engineer & AI Agent Enthusiast
           </h1>
           <p className="text-gray-600">
-            I build scalable distributed systems and AI agents, am a quick learner committed to continuous growth, and invite you to use the chat application on the right to explore more about my experience and skills.
+            I build scalable distributed systems and AI agents, I am a quick learner committed to continuous growth, and inviting you to use the chat application <i>(on the right)</i> to explore more about my experience and skills.
           </p>
 
           {/* Buttons */}
