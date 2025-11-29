@@ -7,3 +7,4 @@ gradio
 requests
 sendgrid
 pypdf
+pydantic

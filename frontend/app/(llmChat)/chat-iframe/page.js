@@ -33,7 +33,7 @@ export default function ChatIframePage() {
     inputRef.current.value = ''
 
     try {
-      const res = await fetch("http://localhost:8000/chat", {
+      const res = await fetch("process.env.LLM_CHATBOT_LOCAL_API_URL", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text })

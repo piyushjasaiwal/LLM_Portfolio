@@ -19,6 +19,10 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     message: str
 
+@app.get("/")
+def default_endpoint():
+    return "Welcome to the the backend of the LLM portfolio"
+
 @app.post("/health")
 def health_check():
     return {"message": "service is up"}
