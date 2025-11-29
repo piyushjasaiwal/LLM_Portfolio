@@ -1,0 +1,21 @@
+{
+    "full_name": "Piyush Jasaiwal",
+    "name": "Piyush",
+    "current_role": "Software Engineer",
+    "location": "India",
+    "email": "piyushjasaiwal@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/piyush-jasaiwal/",
+    "specialties": [
+      "Backend Development",
+      "Machine Learning",
+      "Problem Solving"
+    ],
+    "years_experience": 2,
+    "education": [
+      {
+        "degree": "Bachelor of Technology",
+        "institution": "Delhi Technological University",
+        "year": "2023"
+      }
+    ]
+}
