@@ -13,9 +13,9 @@ export default function Navbar() {
 
   return (
     <nav className="w-full border-b bg-white">
-      <div className="container flex items-center justify-between py-4">
+      <div className="mx-auto flex items-center justify-around px-4 py-4">
         <Link href="/" className="font-semibold text-lg">
-          Piyush
+          Piyush Jasaiwal
         </Link>
         <div className="flex items-center gap-4">
           {items.map(i => (
