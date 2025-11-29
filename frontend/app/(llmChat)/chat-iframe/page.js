@@ -69,7 +69,7 @@ export default function ChatIframePage() {
 
   // Otherwise send to backend normally
   try {
-    const res = await fetch("http://localhost:8000/chat", {
+    const res = await fetch("process.env.NEXT_PUBLIC_LLM_CHATBOT_API_URL", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: optionText })
