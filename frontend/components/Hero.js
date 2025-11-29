@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -6,13 +7,13 @@ export default function Hero() {
       initial={{ opacity: 0, scale: 0.99 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6 }}
-      className="p-6 card h-full flex flex-col justify-between"
+      className="p-6 card h-full flex flex-col justify-between overflow-hidden"
     >
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 h-full">
         {/* Left content */}
         <div className="flex flex-col gap-14 flex-1">
           <h1 className="text-2xl font-bold">
-            Hi, I’m Piyush — Backend Engineer & ML Enthusiast
+            Hi, I’m Piyush — Backend Engineer & AI Agent Enthusiast
           </h1>
           <p className="text-gray-600">
             I build scalable systems, AI agents, and developer tools. This is a
@@ -40,7 +41,16 @@ export default function Hero() {
         {/* Right avatar */}
         <div className="hidden md:flex items-center justify-center flex-shrink-0">
           <div className="w-36 h-36 bg-white rounded-full shadow-md flex items-center justify-center">
-            <span className="text-lg font-medium text-gray-600">P</span>
+            <span className="text-lg font-medium text-gray-600">
+              <Image
+                src="/avatar_photo.jpg"
+                width={144}
+                height={144}
+                alt="Picture of the author"
+                className="rounded-full"
+              />
+
+            </span>
           </div>
         </div>
       </div>
