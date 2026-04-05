@@ -7,12 +7,13 @@ export default function Navbar() {
   const items = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About Me' },
-    { href: '/projects', label: 'My Personal Projects' },
+    { href: '/projects', label: 'Personal Projects' },
     {
       href: 'https://drive.google.com/file/d/173DfvGKsehda89LeBkRcVqQ3gd2biKNT/view?usp=sharing',
       label: 'Resume',
       external: true
     },
+    { href: '/engineering_hub', label: 'Engineering Hub' },
     { href: '/contact', label: 'How To Reach Me' }
   ]
 
