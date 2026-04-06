@@ -3,6 +3,10 @@ import { motion } from 'framer-motion'
 
 // ✅ JSON data (easy to extend later)
 const devNotes = [
+  {
+      'title':'Uber - System Design Part 1',
+      'link':'https://drive.google.com/file/d/1SV4VQA1B_EKZW4_CA72YdN_yFR-xBXtK/view?usp=sharing'
+  }
 ]
 
 export default function DevNotes() {
